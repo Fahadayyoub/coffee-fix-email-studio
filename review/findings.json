@@ -1,0 +1,40 @@
+{
+  "folder": "campaigns/test-bad",
+  "findings": [
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "high",
+      "problem": "Makes a health claim about matcha. It calls it a \"natural detox\" and says it \"clears out your system and helps you feel lighter\". The voice guide bans every health claim, and it names matcha. \"Detox\" is also on the list of words we avoid.",
+      "fix": "Cut the health claim. Describe the drink instead, for example: \"Our matcha is whisked fresh to order, smooth and calm. Take a moment with a cup.\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 2,
+      "severity": "high",
+      "problem": "The preview says matcha is \"a natural detox for your body\". That is a health claim, and \"detox\" is a banned word.",
+      "fix": "Rewrite it without health words, for example: \"Preview: Fresh matcha, made with care. Your new fix is waiting.\" (under 90 characters)."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 1,
+      "severity": "high",
+      "problem": "The subject \"Detox with matcha\" uses a banned health word and suggests a health benefit.",
+      "fix": "Use a warm subject with no health words, for example: \"Subject: Meet our fresh matcha ☕\" (under 50 characters)."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 12,
+      "severity": "medium",
+      "problem": "Adds a second link, to coffeefix.example/matcha. The email rules allow exactly one main link, and it must point to https://coffeefix.example/steep-club.",
+      "fix": "Delete line 12. Keep only the Join The Steep Club button."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 8,
+      "severity": "medium",
+      "problem": "\"Your last chance ... before spots run out\" is pushy sales talk. \"Last chance\" is on the list of words we avoid, and the scarcity pressure doesn't fit our warm, calm, premium voice.",
+      "fix": "Make it a friendly invite, for example: \"We'd love to welcome you to The Steep Club. Come in and take a seat.\""
+    }
+  ]
+}
